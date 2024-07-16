@@ -13,6 +13,7 @@ the app created it for clothing store
     <strong>Highlighted Feature:</strong> This is where you can add a brief description or callout for the highlighted area of the screenshot.
   </div>
 </div>
+```
 
 ## Getting Started
 

@@ -1,4 +1,5 @@
 import 'package:clothing_app_store/utils/apptheme/TSpacingStyle.dart';
+import 'package:clothing_app_store/widgets/IconContainer.dart';
 import 'package:flutter/material.dart';
 
 class LocationAccessScreen extends StatelessWidget {
@@ -16,6 +17,7 @@ class LocationAccessScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.center,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                IconContainer(onTap: (){})
 
               ],
             ),
