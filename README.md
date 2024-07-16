@@ -2,6 +2,10 @@
 
 the app created it for clothing store 
 
+## Screenshots
+- [splash screen](assets/screenshots/splash.jpg)
+- [welcome screen](assets/screenshots/welcome.jpg)
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
