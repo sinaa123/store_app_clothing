@@ -2,6 +2,7 @@ import 'package:clothing_app_store/Screens/VerifiedEmailAccount.dart';
 import 'package:clothing_app_store/utils/apptheme/ColorsApp.dart';
 import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';
 import 'package:clothing_app_store/utils/apptheme/TSpacingStyle.dart';
+import 'package:clothing_app_store/widgets/FormCompleteProfile.dart';
 import 'package:clothing_app_store/widgets/HeaderWidget.dart';
 import 'package:clothing_app_store/widgets/IconContainer.dart';
 import 'package:flutter/material.dart';
@@ -32,7 +33,7 @@ class CompleteProfileScreen extends StatelessWidget {
                     message: "Don't worry, only can see your personal \n data. No one else will be able to see it. ",
                   ),
                   SizedBox(
-                    height: SizesApp.spaceBetweenSection,
+                    height: SizesApp.spaceBetweenItem,
                   ),
                   SizedBox(
                     width: 220.h,
@@ -67,6 +68,7 @@ class CompleteProfileScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  FormCompleteProfile(),
 
                 ],
               ),

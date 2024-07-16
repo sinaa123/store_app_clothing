@@ -1,4 +1,4 @@
-import 'package:clothing_app_store/Screens/OnBoardingScreen.dart';
+import 'package:clothing_app_store/Screens/HomeScreen.dart';
 import 'package:clothing_app_store/Screens/SiginInScreen.dart';
 import 'package:clothing_app_store/utils/apptheme/ColorsApp.dart';
 import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';
@@ -122,7 +122,7 @@ class WelcomeScreen extends StatelessWidget {
                 ContainerInkwell(
                   text: 'Get Started',
                   onTap: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (contex)=>OnBoardingScreen()));
+                    Navigator.push(context, MaterialPageRoute(builder: (contex)=>HomeScreen()));
                   },
 
                 ),
