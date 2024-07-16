@@ -1,6 +1,6 @@
 # clothing_app_store
 
-A new Flutter project.
+the app created it for clothing store 
 
 ## Getting Started
 
