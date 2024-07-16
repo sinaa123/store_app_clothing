@@ -1,6 +1,10 @@
 # clothing_app_store
 
-A new Flutter project.
+the app created it for clothing store 
+
+## Screenshots
+- [splash screen](assets/screenshots/splash.jpg)
+- [welcome screen](assets/screenshots/welcome.jpg)
 
 ## Screenshots
 - [splash screen](assets/screenshots/splash.jpg)
