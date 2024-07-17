@@ -98,8 +98,8 @@ class FeatureWidget extends StatelessWidget {
             },
           ),
         ),
-        const SizedBox(
-          height: 8,
+         SizedBox(
+          height: SizesApp.md,
         ),
         Center(
           child: DotsIndicator(
@@ -109,11 +109,8 @@ class FeatureWidget extends StatelessWidget {
               color: Colors.black26,
               activeColor: ColorsApp.primaryColor,
               spacing: const EdgeInsets.only(left: 6),
-              size: const Size.square(6.0),
-              activeSize: const Size(20.0, 4.0),
-              activeShape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(4.0),
-              ),
+              size: const Size.square(10.0),
+              activeSize: const Size.square(10),
             ),
           ),
         )

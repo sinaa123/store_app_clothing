@@ -1,6 +1,9 @@
 import 'package:clothing_app_store/utils/apptheme/ColorsApp.dart';
+import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';
 import 'package:clothing_app_store/utils/apptheme/TSpacingStyle.dart';
+import 'package:clothing_app_store/widgets/CategoryWidget.dart';
 import 'package:clothing_app_store/widgets/FeatureWidget.dart';
+import 'package:clothing_app_store/widgets/FlashSale.dart';
 import 'package:clothing_app_store/widgets/HeaderAppBarWidget.dart';
 import 'package:flutter/material.dart';
 
@@ -20,10 +23,14 @@ class _HomeScreenState extends State<HomeScreen> {
         body: SingleChildScrollView(
           child: Padding(
             padding: TSpacingStyle.paddingWithAppBarHeight2,
-            child: const Column(
+            child:  Column(
               children: [
                  HeaderAppBarWidget(),
                    FeatureWidget(),
+                SizedBox(height: SizesApp.spaceBetweenSection,),
+                Categorywidget(),
+                SizedBox(height: SizesApp.spaceBetweenSection,),
+                FlashSale(),
               ],
 
             ),

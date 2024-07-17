@@ -1,52 +1,73 @@
 import 'package:clothing_app_store/utils/apptheme/ColorsApp.dart';
+import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';
+import 'package:clothing_app_store/widgets/IconContainer.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Categorywidget extends StatelessWidget {
   const Categorywidget({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SizedBox(
-      height:40.0,
-      child: ListView.separated(
-        physics: const BouncingScrollPhysics(),
-        scrollDirection: Axis.horizontal,
-        itemCount: 3,
-        separatorBuilder: ( context, int index) {
-          return Padding(
-            padding:const EdgeInsets.only(right: 10),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            Text('Category',
+            style: TextStyle(
+              fontSize: SizesApp.fontLg,
+              color: ColorsApp.textColor
+            ),),
+            Spacer(),
+            RichText(
+              text: TextSpan(text: 'See All',style: TextStyle(
+                fontSize: SizesApp.fontMd,
+                color: ColorsApp.primaryColor
+              )),
 
-          );
-
-
-        },
-        itemBuilder: ( context, int index) {
-          return InkWell(
-            onTap: (){
-              // nextScreen(context, PlaceCategoryDetials(caregoryType: categoryList[index].name.toString(),));
-            },
-            child: Chip(
-              label: Text('hhh'),
-              avatar: CircleAvatar(
-                backgroundColor: Colors.white,
-                // backgroundImage: AssetImage(categoryList[index].image.toString()),
-              ),
-              backgroundColor: ColorsApp.white,
-              elevation: 0.4,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12.0),
-              ),
             ),
-          );
-        },),
+          ],
+        ),
+        SizedBox(height: SizesApp.spaceBetweenItem,),
+        SizedBox(
+          height: 100.h,
+          child: ListView.separated(
+            physics: const BouncingScrollPhysics(),
+            scrollDirection: Axis.horizontal,
+            itemCount: 6,
+            separatorBuilder: (context, int index) {
+              return Padding(
+                padding:  EdgeInsets.only(right: SizesApp.lg),
+              );
+            },
+            itemBuilder: (context, int index) {
+              return Row(
+                children: [
+                  Column(
+                    children: [
+                      IconContainer(
+                        width: 75.h,
+                        height: 75.h,
+                        iconColor: ColorsApp.primaryColor,
+                        icon: Icons.store_outlined,
+                        onTap: (){},
+                          color: ColorsApp.containerBackground,
+
+                      ),
+                      SizedBox(width: SizesApp.md,),
+                      Text('T-Shirt',style: TextStyle(
+                        fontSize: SizesApp.fontMd,
+                        color: ColorsApp.textColor
+                      ),),
+                    ],
+                  ),
+                ],
+              );
+            },
+          ),
+        ),
+      ],
     );
   }
 }
-/*
-ClipRRect(
-borderRadius: BorderRadius.circular(16.h),
-child: Container(
-width: 180.h,
-decoration: BoxDecoration(
-color: AppColors.containerColor,
-),*/
