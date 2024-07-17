@@ -6,7 +6,5 @@ the app created it for clothing store
 - [splash screen](assets/screenshots/splash.jpg)
 - [welcome screen](assets/screenshots/welcome.jpg)
 
-- (assets/screenshots/splash.jpg)
-
 ## Getting Started
 
