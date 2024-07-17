@@ -105,12 +105,12 @@ class FeatureWidget extends StatelessWidget {
           child: DotsIndicator(
             dotsCount: 5,
             position: 0,
-            decorator: DotsDecorator(
+            decorator:const DotsDecorator(
               color: Colors.black26,
               activeColor: ColorsApp.primaryColor,
-              spacing: const EdgeInsets.only(left: 6),
-              size: const Size.square(10.0),
-              activeSize: const Size.square(10),
+              spacing:  EdgeInsets.only(left: 6),
+              size:  Size.square(10.0),
+              activeSize:  Size.square(10),
             ),
           ),
         )

@@ -1,4 +1,3 @@
-import 'package:clothing_app_store/Screens/ForgetPasswordScreen.dart';
 import 'package:clothing_app_store/Screens/VerifiedEmailAccount.dart';
 import 'package:clothing_app_store/utils/apptheme/ColorsApp.dart';
 import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';
@@ -13,7 +12,7 @@ class FormSiginUp extends StatelessWidget {
   Widget build(BuildContext context) {
     InputBorder inputBorder =  OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(SizesApp.borderRadiusLarge)),
-        borderSide: BorderSide(color: Colors.grey, width: 1));
+        borderSide:const BorderSide(color: Colors.grey, width: 1));
     return Form(
       child: Padding(
         padding:  EdgeInsets.symmetric(
@@ -42,7 +41,7 @@ class FormSiginUp extends StatelessWidget {
                   disabledBorder: inputBorder,
                   errorBorder: inputBorder.copyWith(
                       borderSide:
-                      BorderSide(color: Colors.red, width: 1))),
+                      const  BorderSide(color: Colors.red, width: 1))),
             ),
             SizedBox(height:  SizesApp.spaceNetweenInputField,),
             ReusableText(
@@ -65,7 +64,7 @@ class FormSiginUp extends StatelessWidget {
                   disabledBorder: inputBorder,
                   errorBorder: inputBorder.copyWith(
                       borderSide:
-                      BorderSide(color: Colors.red, width: 1))),
+                      const BorderSide(color: Colors.red, width: 1))),
             ),
             SizedBox(height:  SizesApp.spaceNetweenInputField,),
             ReusableText(
@@ -79,7 +78,7 @@ class FormSiginUp extends StatelessWidget {
               decoration: InputDecoration(
                   contentPadding: EdgeInsets.all(SizesApp.sm),
                   filled: true,
-                  suffixIcon: Icon(Icons.visibility_off_outlined,size: SizesApp.iconMd,) ,
+                  suffixIcon: const Icon(Icons.visibility_off_outlined,size: SizesApp.iconMd,) ,
                   hintStyle: TextStyle(
                       color: Colors.grey.shade500, fontSize: SizesApp.fontSm),
                   fillColor: Colors.white,
@@ -90,7 +89,7 @@ class FormSiginUp extends StatelessWidget {
                   disabledBorder: inputBorder,
                   errorBorder: inputBorder.copyWith(
                       borderSide:
-                      BorderSide(color: Colors.red, width: 1))),
+                      const BorderSide(color: Colors.red, width: 1))),
             ),
             SizedBox(
               height: SizesApp.spaceNetweenInputField ,
@@ -108,7 +107,7 @@ class FormSiginUp extends StatelessWidget {
                  SizedBox(
                   width: SizesApp.spaceBetweenItem,
                 ),
-                Text.rich(
+                const  Text.rich(
                   TextSpan(
                     children: [
                       TextSpan(
@@ -137,7 +136,7 @@ class FormSiginUp extends StatelessWidget {
             ),
             ContainerInkwell(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>VerifiedEmailAccount()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const VerifiedEmailAccount()));
                 },
                 text: 'Sigin up'),
 

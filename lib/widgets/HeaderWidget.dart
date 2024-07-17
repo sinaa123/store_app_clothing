@@ -27,7 +27,7 @@ class HeaderWidget extends StatelessWidget {
         Text(
           message,
           textAlign: TextAlign.center,
-          style: TextStyle(
+          style:const TextStyle(
               fontSize: SizesApp.fontSm, color: ColorsApp.secondaryColor),
         ),
       ],

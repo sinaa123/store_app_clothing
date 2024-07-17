@@ -10,13 +10,13 @@ class HeaderAppBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     InputBorder inputBorder =  OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(SizesApp.borderRadiusLarge)),
-        borderSide: BorderSide(color: Colors.grey, width: 1));
+        borderSide: const BorderSide(color: Colors.grey, width: 1));
     return Padding(
       padding:  EdgeInsets.only(top: SizesApp.spaceBetweenSection),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text('Location',style: TextStyle(
+          const Text('Location',style: TextStyle(
             color: ColorsApp.secondaryColor,
             fontSize: SizesApp.fontMd
           ),),
@@ -24,12 +24,12 @@ class HeaderAppBarWidget extends StatelessWidget {
             children: [
               Row(
                 children: [
-                  Icon(Icons.location_on,color: ColorsApp.primaryColor,size: SizesApp.iconMd,),
+                  const  Icon(Icons.location_on,color: ColorsApp.primaryColor,size: SizesApp.iconMd,),
                   SizedBox(width: SizesApp.xs,),
-                  Text('Sanaa , Yemen ')
+                  const Text('Sanaa , Yemen ')
                 ],
               ),
-              Spacer(),
+              const Spacer(),
               IconContainer(
                 onTap: (){},
                 color: Colors.grey.shade200,
@@ -52,13 +52,13 @@ class HeaderAppBarWidget extends StatelessWidget {
                       hintStyle: TextStyle(
                           color: Colors.grey.shade500, fontSize: SizesApp.fontSm),
                       border: inputBorder,
-                      prefixIcon: Icon(Icons.search,size: SizesApp.iconMd,color: ColorsApp.primaryColor,),
+                      prefixIcon:const Icon(Icons.search,size: SizesApp.iconMd,color: ColorsApp.primaryColor,),
                       focusedBorder: inputBorder,
                       enabledBorder: inputBorder,
                       disabledBorder: inputBorder,
                       errorBorder: inputBorder.copyWith(
                           borderSide:
-                          BorderSide(color: Colors.red, width: 1))),
+                          const BorderSide(color: Colors.red, width: 1))),
                 ),
               ),
               SizedBox(width: SizesApp.sm,),

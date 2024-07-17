@@ -1,6 +1,5 @@
 import 'package:clothing_app_store/utils/apptheme/ColorsApp.dart';
 import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';
-import 'package:clothing_app_store/widgets/CodeNumberContainer.dart';
 import 'package:clothing_app_store/widgets/IconContainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,14 +14,14 @@ class FlashSale extends StatelessWidget {
       children: [
         Row(
           children: [
-            Text(
+            const Text(
               'Flash Sale',
               style: TextStyle(
                   fontSize: SizesApp.fontLg, color: ColorsApp.textColor),
             ),
-            Spacer(),
+            const Spacer(),
             RichText(
-              text: TextSpan(
+              text:const TextSpan(
                   text: 'Closing in : ',
                   style: TextStyle(
                       fontSize: SizesApp.fontSm,
@@ -32,7 +31,7 @@ class FlashSale extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  Spacer(),
+                  const  Spacer(),
                   Container(
                     width: 25.h,
                     height: 25.h,
@@ -40,7 +39,7 @@ class FlashSale extends StatelessWidget {
                         color: ColorsApp.containerBackground,
                         borderRadius:
                             BorderRadius.circular(SizesApp.borderRadiusSm)),
-                    child: Center(
+                    child:const Center(
                         child: Text(
                       '02',
                       style: TextStyle(
@@ -48,12 +47,12 @@ class FlashSale extends StatelessWidget {
                           color: ColorsApp.primaryColor),
                     )),
                   ),
-                  Spacer(),
-                  Text(
+                  const Spacer(),
+                  const Text(
                     ' : ',
                     style: TextStyle(color: ColorsApp.primaryColor),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   Container(
                     width: 25.h,
                     height: 25.h,
@@ -61,7 +60,7 @@ class FlashSale extends StatelessWidget {
                         color: ColorsApp.containerBackground,
                         borderRadius:
                             BorderRadius.circular(SizesApp.borderRadiusSm)),
-                    child: Center(
+                    child: const Center(
                         child: Text(
                       '12',
                       style: TextStyle(
@@ -69,7 +68,7 @@ class FlashSale extends StatelessWidget {
                           color: ColorsApp.primaryColor),
                     )),
                   ),
-                  Spacer(),
+                  const  Spacer(),
                 ],
               ),
             ),
@@ -94,7 +93,7 @@ class FlashSale extends StatelessWidget {
                 children: [
                   IconContainer(
                     onTap: () {},
-                    widget: Text(
+                    widget:const Text(
                       'All',
                       style: TextStyle(
                           textBaseline: TextBaseline.alphabetic,

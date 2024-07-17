@@ -23,18 +23,18 @@ class _CountryCodePickerState extends State<CountryCodePicker> {
       child: Row(
 
         children: [
-          Spacer(),
+          const Spacer(),
           DropdownButtonHideUnderline(
             child: DropdownButton<String>(
               dropdownColor: ColorsApp.white,
               elevation: 2,
               borderRadius: BorderRadius.circular(SizesApp.borderRadiusMd),
-              style: TextStyle(
+              style: const TextStyle(
                 color: ColorsApp.secondaryColor,
                 fontSize: SizesApp.fontSm
               ),
               value: _selectedCountryCode,
-              items: [
+              items: const [
                 DropdownMenuItem(value: '+1', child: Text('+1')),
                 DropdownMenuItem(value: '+44', child: Text('+44')),
                 DropdownMenuItem(value: '+91', child: Text('+91')),
@@ -48,13 +48,13 @@ class _CountryCodePickerState extends State<CountryCodePicker> {
               },
             ),
           ),
-       Spacer(),
+          const Spacer(),
           Container(
             width: 1.0,
             height: 24.0,
             color: ColorsApp.secondaryColor,
           ),
-          Spacer(),
+          const Spacer(),
         ],
       ),
     );

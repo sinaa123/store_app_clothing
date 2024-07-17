@@ -1,11 +1,8 @@
-import 'package:clothing_app_store/Screens/ForgetPasswordScreen.dart';
 import 'package:clothing_app_store/Screens/HomeScreen.dart';
 import 'package:clothing_app_store/Screens/NewPasswordScreen.dart';
-import 'package:clothing_app_store/Screens/VerifiedEmailAccount.dart';
 import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';
 import 'package:clothing_app_store/widgets/ReusableText.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../utils/apptheme/ColorsApp.dart';
 import 'ContainerInkwell.dart';
@@ -18,7 +15,7 @@ class FormLogin extends StatelessWidget {
   Widget build(BuildContext context) {
     InputBorder inputBorder =  OutlineInputBorder(
         borderRadius: BorderRadius.all(Radius.circular(SizesApp.borderRadiusLarge)),
-        borderSide: BorderSide(color: Colors.grey, width: 1));
+        borderSide: const BorderSide(color: Colors.grey, width: 1));
     return Form(
       child: Padding(
         padding:  EdgeInsets.symmetric(
@@ -47,7 +44,7 @@ class FormLogin extends StatelessWidget {
                   disabledBorder: inputBorder,
                   errorBorder: inputBorder.copyWith(
                       borderSide:
-                      BorderSide(color: Colors.red, width: 1))),
+                      const  BorderSide(color: Colors.red, width: 1))),
             ),
            SizedBox(height:  SizesApp.spaceNetweenInputField,),
             ReusableText(
@@ -61,7 +58,7 @@ class FormLogin extends StatelessWidget {
               decoration: InputDecoration(
                   contentPadding: EdgeInsets.all(SizesApp.sm),
                   filled: true,
-                  suffixIcon: Icon(Icons.visibility_off_outlined,size: SizesApp.iconMd,) ,
+                  suffixIcon:const Icon(Icons.visibility_off_outlined,size: SizesApp.iconMd,) ,
                   hintStyle: TextStyle(
                       color: Colors.grey.shade500, fontSize: SizesApp.fontSm),
                   fillColor: Colors.white,
@@ -72,7 +69,7 @@ class FormLogin extends StatelessWidget {
                   disabledBorder: inputBorder,
                   errorBorder: inputBorder.copyWith(
                       borderSide:
-                      BorderSide(color: Colors.red, width: 1))),
+                      const BorderSide(color: Colors.red, width: 1))),
             ),
              SizedBox(
               height: SizesApp.spaceNetweenInputField / 2,
@@ -81,12 +78,12 @@ class FormLogin extends StatelessWidget {
               alignment: Alignment.bottomRight,
               child: GestureDetector(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>NewPasswordScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const NewPasswordScreen()));
                 },
                 child: Padding(
                   padding:  EdgeInsets.only(right:SizesApp.md),
                   child: RichText(
-                    text: TextSpan(
+                    text: const TextSpan(
                       text: 'Forget password?',
                       style: TextStyle(
                           decoration:TextDecoration.underline ,
@@ -103,7 +100,7 @@ class FormLogin extends StatelessWidget {
             ),
             ContainerInkwell(
                 onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>HomeScreen()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomeScreen()));
                 },
                 text: 'Sigin in'),
 

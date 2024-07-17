@@ -18,7 +18,7 @@ class LineTextFooter extends StatelessWidget {
           RichText(
             text: TextSpan(
               text: sup_text,
-              style: TextStyle(
+              style:const TextStyle(
                   color: ColorsApp.textColor,
                   fontSize: SizesApp.fontMd
               ),
@@ -32,7 +32,7 @@ class LineTextFooter extends StatelessWidget {
               text: TextSpan(
                 mouseCursor:MouseCursor.uncontrolled ,
                 text: super_text,
-                style: TextStyle(
+                style:const TextStyle(
                     decoration:TextDecoration.underline ,
                     color: ColorsApp.primaryColor,
                     fontSize: SizesApp.fontMd

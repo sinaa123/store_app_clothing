@@ -1,7 +1,4 @@
-import 'package:clothing_app_store/utils/apptheme/ColorsApp.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../utils/apptheme/SizesApp.dart';

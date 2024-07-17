@@ -1,4 +1,3 @@
-import 'package:clothing_app_store/Screens/HomeScreen.dart';
 import 'package:clothing_app_store/Screens/LocationAccessScreen.dart';
 import 'package:clothing_app_store/utils/apptheme/ColorsApp.dart';
 import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';

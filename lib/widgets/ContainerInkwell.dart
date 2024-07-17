@@ -23,7 +23,7 @@ class ContainerInkwell extends StatelessWidget {
             borderRadius: BorderRadius.circular(SizesApp.borderRadiusLarge),
           ),
           child: Center(
-            child: Text(text, style: TextStyle(
+            child: Text(text, style: const TextStyle(
                 color: ColorsApp.white,
               fontSize:SizesApp.fontLg ,
             )),

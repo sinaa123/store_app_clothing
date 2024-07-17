@@ -14,7 +14,7 @@ class ReusableText extends StatelessWidget {
       padding:  EdgeInsets.only(bottom: SizesApp.sm),
       child: Text(
         tittle,
-        style: TextStyle(fontWeight: FontWeight.w200, fontSize: SizesApp.fontSm),
+        style:const TextStyle(fontWeight: FontWeight.w200, fontSize: SizesApp.fontSm),
       ),
     );
   }

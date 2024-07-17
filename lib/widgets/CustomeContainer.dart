@@ -1,6 +1,5 @@
 import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../utils/apptheme/ColorsApp.dart';
 

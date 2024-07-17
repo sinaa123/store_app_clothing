@@ -14,14 +14,14 @@ class Categorywidget extends StatelessWidget {
       children: [
         Row(
           children: [
-            Text('Category',
+          const  Text('Category',
             style: TextStyle(
               fontSize: SizesApp.fontLg,
               color: ColorsApp.textColor
             ),),
-            Spacer(),
+            const Spacer(),
             RichText(
-              text: TextSpan(text: 'See All',style: TextStyle(
+              text: const TextSpan(text: 'See All',style: TextStyle(
                 fontSize: SizesApp.fontMd,
                 color: ColorsApp.primaryColor
               )),
@@ -56,7 +56,7 @@ class Categorywidget extends StatelessWidget {
 
                       ),
                       SizedBox(width: SizesApp.md,),
-                      Text('T-Shirt',style: TextStyle(
+                      const Text('T-Shirt',style: TextStyle(
                         fontSize: SizesApp.fontMd,
                         color: ColorsApp.textColor
                       ),),

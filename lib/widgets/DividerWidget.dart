@@ -11,7 +11,7 @@ class DividerWidget extends StatelessWidget {
     return   Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Flexible(
+        const Flexible(
           child: Divider(
             color:  Colors.grey,
             thickness: 0.5,
@@ -21,13 +21,13 @@ class DividerWidget extends StatelessWidget {
         ),
         Text(
           tittle,
-          style: TextStyle(
+          style: const TextStyle(
             fontSize: SizesApp.fontSm,
             color: ColorsApp.secondaryColor
           ),
         ),
-        Flexible(
-          child: Divider(
+        const Flexible(
+          child: const Divider(
             color: Colors.grey,
             thickness: 0.5,
             indent: 5,

@@ -15,7 +15,7 @@ class CodeNumberContainer extends StatelessWidget {
           border: Border.all(color: Colors.grey.shade300,width: 1),
           borderRadius: BorderRadius.circular(SizesApp.borderRadiusXLg)
       ),
-      child: Center(child: Text('2',
+      child: const Center(child: Text('2',
         style: TextStyle(
             fontSize: SizesApp.fontSm,
             color: ColorsApp.textColor
