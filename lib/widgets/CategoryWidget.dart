@@ -1,6 +1,7 @@
-import 'package:clothing_app_store/utils/apptheme/ColorsApp.dart';
-import 'package:clothing_app_store/utils/apptheme/SizesApp.dart';
-import 'package:clothing_app_store/widgets/IconContainer.dart';
+
+import 'package:clothing_app_store/core/apptheme/ColorsApp.dart';
+import 'package:clothing_app_store/core/apptheme/SizesApp.dart';
+import 'package:clothing_app_store/core/widgets/IconContainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

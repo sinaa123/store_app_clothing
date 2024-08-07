@@ -1,7 +1,6 @@
+import 'package:clothing_app_store/core/apptheme/ColorsApp.dart';
+import 'package:clothing_app_store/core/apptheme/SizesApp.dart';
 import 'package:flutter/material.dart';
-
-import '../utils/apptheme/ColorsApp.dart';
-import '../utils/apptheme/SizesApp.dart';
 
 class LineTextFooter extends StatelessWidget {
    LineTextFooter ({super.key,required this.sup_text,required this.super_text,required this.onTap});

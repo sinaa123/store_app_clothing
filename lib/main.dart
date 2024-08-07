@@ -1,4 +1,4 @@
-import 'package:clothing_app_store/Screens/InitialScreen.dart';
+import 'package:clothing_app_store/features/initial_screen/presentation/InitialScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
