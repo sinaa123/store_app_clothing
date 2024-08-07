@@ -15,7 +15,7 @@ class Categorywidget extends StatelessWidget {
       children: [
         Row(
           children: [
-          const  Text('Category',
+            Text('Category',
             style: TextStyle(
               fontSize: SizesApp.fontLg,
               color: ColorsApp.textColor

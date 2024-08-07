@@ -21,7 +21,7 @@ class CustomeContainer extends StatelessWidget {
               image: AssetImage(imagePath!),
               fit: BoxFit.cover),
           color: ColorsApp.backgroundColor,
-          borderRadius: BorderRadius.circular(radius!)),
+          borderRadius: BorderRadiusDirectional.circular(radius!)),
     );
   }
 }

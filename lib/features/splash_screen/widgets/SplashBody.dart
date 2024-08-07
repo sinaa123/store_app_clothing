@@ -1,5 +1,6 @@
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:clothing_app_store/core/apptheme/ColorsApp.dart';
+import 'package:clothing_app_store/core/utils/SizeConfig.dart';
 import 'package:clothing_app_store/features/welcome_screen/presentation/WelcomeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -10,6 +11,7 @@ class SplashBody  extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig.init(context);
     return Container(
     alignment: AlignmentDirectional.center,
     child: AnimatedSplashScreen(

@@ -14,7 +14,7 @@ class FlashSale extends StatelessWidget {
       children: [
         Row(
           children: [
-            const Text(
+             Text(
               'Flash Sale',
               style: TextStyle(
                   fontSize: SizesApp.fontLg, color: ColorsApp.textColor),

@@ -24,7 +24,7 @@ static const double iconLg=32.0;
 static const double fontSmall=12.0;
 static const double fontSm=14.0;
 static const double fontMd=16.0;
-static const double fontLg=18.0;
+static  double fontLg=18.0.r;
 
 // button sizes
 static const double buttonHeight=18.0;

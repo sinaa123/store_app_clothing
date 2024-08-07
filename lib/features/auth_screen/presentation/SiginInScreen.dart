@@ -6,11 +6,11 @@ import 'package:clothing_app_store/features/auth_screen/widgets/FormLogin.dart';
 import 'package:clothing_app_store/widgets/DividerWidget.dart';
 import 'package:clothing_app_store/widgets/FooterWidget.dart';
 import 'package:clothing_app_store/widgets/HeaderWidget.dart';
-import 'package:clothing_app_store/widgets/LineTextFooter.dart';
+import 'package:clothing_app_store/features/welcome_screen/widgets/LineTextFooter.dart';
 import 'package:flutter/material.dart';
 
 class SiginInScreen extends StatelessWidget {
-  SiginInScreen({Key? key}) : super(key: key);
+  const SiginInScreen({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return Container(

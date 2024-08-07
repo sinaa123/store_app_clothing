@@ -1,5 +1,6 @@
 import 'package:clothing_app_store/core/apptheme/ColorsApp.dart';
 import 'package:clothing_app_store/core/apptheme/SizesApp.dart';
+import 'package:clothing_app_store/core/utils/SizeConfig.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -10,24 +11,31 @@ class ContainerInkwell extends StatelessWidget {
   String text;
   @override
   Widget build(BuildContext context) {
-    return  Center(
-      child: InkWell(
-        borderRadius:BorderRadius.circular(SizesApp.borderRadiusLarge),
-        onTap: onTap,
-        child: Container(
-          padding: EdgeInsets.all(SizesApp.sm),
-          height: 50.h,
-          width: SizesApp.width,
-          decoration: BoxDecoration(
-            color:   ColorsApp.primaryColor ,
-            borderRadius: BorderRadius.circular(SizesApp.borderRadiusLarge),
-          ),
-          child: Center(
-            child: Text(text, style: const TextStyle(
-                color: ColorsApp.white,
-              fontSize:SizesApp.fontLg ,
-            )),
-          ),
+    return  InkWell(
+      borderRadius:BorderRadius.circular(SizesApp.borderRadiusLarge),
+      onTap: onTap,
+      child: Container(
+        padding: EdgeInsetsDirectional.only(
+          top: SizeConfig.defaultSize! * 1,
+        ),
+        margin: EdgeInsetsDirectional.only(
+          start: SizeConfig.defaultSize! * 2,
+          end: SizeConfig.defaultSize! * 2,
+        ),
+        height: SizeConfig.defaultSize! * 7.5,
+        width: SizeConfig.screenWidth,
+        decoration: BoxDecoration(
+          color:   ColorsApp.primaryColor ,
+          borderRadius: BorderRadius.circular(SizesApp.borderRadiusLarge),
+        ),
+        child: Center(
+          child: Text(text,
+              textAlign: TextAlign.center,
+              style:  TextStyle(
+              color: ColorsApp.white,
+            fontSize:SizesApp.fontLg,
+
+          )),
         ),
       ),
     );

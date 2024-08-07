@@ -6,6 +6,7 @@ class ColorsApp{
   static const Color secondaryColor = Color(0xFF797979);
   static const Color backgroundColor = Color(0xFFEDEDED);
   static const Color textColor = Color(0xFF1F2029);
+  static const Color textSecondryColor = Color(0xFF898989);
   static const Color white = Color(0xFFFFFFFF);
   static const Color black = Color(0xFF000000);
   static const Color gray = Color(0xFF5F5F5F);
