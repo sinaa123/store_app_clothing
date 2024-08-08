@@ -1,7 +1,7 @@
 import 'package:clothing_app_store/core/apptheme/ColorsApp.dart';
 import 'package:clothing_app_store/core/apptheme/SizesApp.dart';
 import 'package:clothing_app_store/core/apptheme/TSpacingStyle.dart';
-import 'package:clothing_app_store/features/auth_screen/presentation/LocationAccessScreen.dart';
+import 'package:clothing_app_store/features/auth_screen/presentation/location_screen/LocationAccessScreen.dart';
 import 'package:clothing_app_store/core/widgets/IconContainer.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';

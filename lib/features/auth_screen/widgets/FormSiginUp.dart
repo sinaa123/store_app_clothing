@@ -1,6 +1,9 @@
 import 'package:clothing_app_store/core/apptheme/ColorsApp.dart';
 import 'package:clothing_app_store/core/apptheme/SizesApp.dart';
-import 'package:clothing_app_store/features/auth_screen/presentation/VerifiedEmailAccount.dart';
+import 'package:clothing_app_store/core/utils/SizeConfig.dart';
+import 'package:clothing_app_store/core/widgets/CustomeTextFiled.dart';
+import 'package:clothing_app_store/core/widgets/SpaceWidget.dart';
+import 'package:clothing_app_store/features/auth_screen/presentation/password_screen/VerifiedEmailAccount.dart';
 import 'package:clothing_app_store/core/widgets/ContainerInkwell.dart';
 import 'package:clothing_app_store/core/widgets/ReusableText.dart';
 import 'package:flutter/material.dart';
@@ -14,87 +17,47 @@ class FormSiginUp extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(SizesApp.borderRadiusLarge)),
         borderSide:const BorderSide(color: Colors.grey, width: 1));
     return Form(
-      child: Padding(
-        padding:  EdgeInsets.symmetric(
-          vertical: SizesApp.spaceBetweenSection,
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            ReusableText(
-              tittle: 'Name',
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          ReusableText(
+            tittle: 'Name',
+          ),
+          CustomeTextFiled(
+            hintText: 'sinaa algahafi',
+            textInputType: TextInputType.name,
+
+          ),
+          SpaceVerticalWidget(value: 1,),
+          ReusableText(
+            tittle: 'Email',
+          ),
+          CustomeTextFiled(
+            hintText: 'example@gmail.com',
+            textInputType: TextInputType.emailAddress,
+
+          ),
+          SpaceVerticalWidget(value: 1,),
+          ReusableText(
+            tittle: 'Password',
+          ),
+          CustomeTextFiled(
+            obscureText: true,
+            hintText: '******',
+            maxLine: 1,
+            suffecxIcon: const Icon(Icons.visibility_off_outlined,size: SizesApp.iconMd,color: ColorsApp.primaryColor,) ,
+
+            textInputAction: TextInputAction.done,
+            textInputType: TextInputType.visiblePassword,
+
+          ),
+          SpaceVerticalWidget(value: 2,),
+          Padding(
+            padding:  EdgeInsetsDirectional.only(
+              start: SizeConfig.defaultSize! * 2,
+              end: SizeConfig.defaultSize! * 2,
             ),
-            TextFormField(
-              textInputAction: TextInputAction.next,
-              keyboardType: TextInputType.name,
-              autovalidateMode: AutovalidateMode.onUserInteraction,
-              decoration: InputDecoration(
-                  contentPadding: EdgeInsets.all(SizesApp.sm),
-                  filled: true,
-                  fillColor: Colors.white,
-                  hintText: 'sinaa algahafi',
-                  hintStyle: TextStyle(
-                      color: Colors.grey.shade500, fontSize: SizesApp.fontSm),
-                  border: inputBorder,
-                  focusedBorder: inputBorder,
-                  enabledBorder: inputBorder,
-                  disabledBorder: inputBorder,
-                  errorBorder: inputBorder.copyWith(
-                      borderSide:
-                      const  BorderSide(color: Colors.red, width: 1))),
-            ),
-            SizedBox(height:  SizesApp.spaceNetweenInputField,),
-            ReusableText(
-              tittle: 'Email',
-            ),
-            TextFormField(
-              textInputAction: TextInputAction.next,
-              keyboardType: TextInputType.emailAddress,
-              autovalidateMode: AutovalidateMode.onUserInteraction,
-              decoration: InputDecoration(
-                  contentPadding: EdgeInsets.all(SizesApp.sm),
-                  filled: true,
-                  fillColor: Colors.white,
-                  hintText: 'example@gmail.com',
-                  hintStyle: TextStyle(
-                      color: Colors.grey.shade500, fontSize: SizesApp.fontSm),
-                  border: inputBorder,
-                  focusedBorder: inputBorder,
-                  enabledBorder: inputBorder,
-                  disabledBorder: inputBorder,
-                  errorBorder: inputBorder.copyWith(
-                      borderSide:
-                      const BorderSide(color: Colors.red, width: 1))),
-            ),
-            SizedBox(height:  SizesApp.spaceNetweenInputField,),
-            ReusableText(
-              tittle: 'Password',
-            ),
-            TextFormField(
-              obscureText: true,
-              textInputAction: TextInputAction.done,
-              keyboardType: TextInputType.visiblePassword,
-              autovalidateMode: AutovalidateMode.onUserInteraction,
-              decoration: InputDecoration(
-                  contentPadding: EdgeInsets.all(SizesApp.sm),
-                  filled: true,
-                  suffixIcon: const Icon(Icons.visibility_off_outlined,size: SizesApp.iconMd,) ,
-                  hintStyle: TextStyle(
-                      color: Colors.grey.shade500, fontSize: SizesApp.fontSm),
-                  fillColor: Colors.white,
-                  hintText: '*********',
-                  border: inputBorder,
-                  focusedBorder: inputBorder,
-                  enabledBorder: inputBorder,
-                  disabledBorder: inputBorder,
-                  errorBorder: inputBorder.copyWith(
-                      borderSide:
-                      const BorderSide(color: Colors.red, width: 1))),
-            ),
-            SizedBox(
-              height: SizesApp.spaceNetweenInputField ,
-            ),
-            Row(
+            child: Row(
               children: [
                 SizedBox(
                   width: SizesApp.iconMd,
@@ -104,9 +67,7 @@ class FormSiginUp extends StatelessWidget {
                     checkColor: ColorsApp.white,
                       value: true, onChanged: (value) {}),
                 ),
-                 SizedBox(
-                  width: SizesApp.spaceBetweenItem,
-                ),
+                SpaceHorizentalWidget(value: 1,),
                 const  Text.rich(
                   TextSpan(
                     children: [
@@ -118,7 +79,6 @@ class FormSiginUp extends StatelessWidget {
                         ),
                       ),
                       TextSpan(
-
                         text: 'terms & condiction',
                         style:TextStyle(
                           decoration: TextDecoration.underline,
@@ -131,17 +91,15 @@ class FormSiginUp extends StatelessWidget {
                 ),
               ],
             ),
-            SizedBox(
-              height: SizesApp.spaceBetweenSection,
-            ),
-            ContainerInkwell(
-                onTap: (){
-                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const VerifiedEmailAccount()));
-                },
-                text: 'Sigin up'),
+          ),
+          SpaceVerticalWidget(value: 3,),
+          ContainerInkwell(
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context)=>const VerifiedEmailAccount()));
+              },
+              text: 'Sigin up'),
 
-          ],
-        ),
+        ],
       ) ,
     );
   }

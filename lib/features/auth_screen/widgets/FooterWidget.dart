@@ -1,5 +1,5 @@
-import 'package:clothing_app_store/core/apptheme/SizesApp.dart';
 import 'package:clothing_app_store/core/widgets/IconContainer.dart';
+import 'package:clothing_app_store/core/widgets/SpaceWidget.dart';
 import 'package:flutter/material.dart';
 
 class FooterWidget extends StatelessWidget {
@@ -15,19 +15,15 @@ class FooterWidget extends StatelessWidget {
           path: 'assets/icons/google.png',
 
         ),
-         SizedBox(
-          width:SizesApp.md,
-        ),
+        SpaceHorizentalWidget(value: 3,),
         IconContainer(
           onTap: (){},
           path: 'assets/icons/google.png',
         ),
-        SizedBox(
-          width:SizesApp.md,
-        ),
+        SpaceHorizentalWidget(value: 3,),
         IconContainer(
           onTap: (){},
-          path: 'assets/icons/facebookpng.png',
+          path: 'assets/icons/google.png',
         )
       ],
     );

@@ -1,7 +1,7 @@
 import 'package:clothing_app_store/core/apptheme/ColorsApp.dart';
 import 'package:clothing_app_store/core/apptheme/SizesApp.dart';
+import 'package:clothing_app_store/core/utils/SizeConfig.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class CodeNumberContainer extends StatelessWidget {
   const CodeNumberContainer({super.key});
@@ -9,10 +9,13 @@ class CodeNumberContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 65.h,
-      height: 45.h,
+      alignment: AlignmentDirectional.center,
+      padding: EdgeInsetsDirectional.all(SizeConfig.defaultSize! * 0.5),
+      margin: EdgeInsets.all(SizeConfig.defaultSize! * 1),
+      width: SizeConfig.defaultSize! * 8,
+      height: SizeConfig.defaultSize! * 5,
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.grey.shade300,width: 1),
+          border: Border.all(color: ColorsApp.borderColor,width: 1),
           borderRadius: BorderRadius.circular(SizesApp.borderRadiusXLg)
       ),
       child: const Center(child: Text('2',

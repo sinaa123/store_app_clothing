@@ -22,7 +22,7 @@ class ContainerInkwell extends StatelessWidget {
           start: SizeConfig.defaultSize! * 2,
           end: SizeConfig.defaultSize! * 2,
         ),
-        height: SizeConfig.defaultSize! * 7.5,
+        height: SizeConfig.defaultSize! * 6.5,
         width: SizeConfig.screenWidth,
         decoration: BoxDecoration(
           color:   ColorsApp.primaryColor ,
@@ -30,7 +30,6 @@ class ContainerInkwell extends StatelessWidget {
         ),
         child: Center(
           child: Text(text,
-              textAlign: TextAlign.center,
               style:  TextStyle(
               color: ColorsApp.white,
             fontSize:SizesApp.fontLg,

@@ -3,7 +3,7 @@ import 'package:clothing_app_store/core/apptheme/SizesApp.dart';
 import 'package:clothing_app_store/core/utils/SizeConfig.dart';
 import 'package:clothing_app_store/core/widgets/ContainerInkwell.dart';
 import 'package:clothing_app_store/core/widgets/CustomeContainer.dart';
-import 'package:clothing_app_store/features/auth_screen/presentation/SiginInScreen.dart';
+import 'package:clothing_app_store/features/auth_screen/presentation/login_screen/SiginInScreen.dart';
 import 'package:clothing_app_store/features/home_screen/presentation/HomeScreen.dart';
 import 'package:clothing_app_store/features/welcome_screen/widgets/LineTextFooter.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +18,7 @@ class WelcomBody extends StatelessWidget {
       child: SingleChildScrollView(
         child: Padding(
           padding:  EdgeInsets.only(
-            top: SizeConfig.defaultSize! * 10
+            top: SizeConfig.defaultSize! * 8
           ),
           child: Column(
             children: [
@@ -55,7 +55,7 @@ class WelcomBody extends StatelessWidget {
 
                 ],
               ),
-              SizedBox(height: SizeConfig.defaultSize! * 5),
+              SizedBox(height: SizeConfig.defaultSize! * 4),
               Text.rich(
                 textAlign: TextAlign.center,
                 TextSpan(
