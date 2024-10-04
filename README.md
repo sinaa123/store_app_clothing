@@ -1,6 +1,9 @@
 # clothing_app_store
 
 the app created it for clothing store 
+newsjhdklasjdl
+sdkljsalkdskl
+asdkjaskljdlsk
 
 ## Screenshots
 - [splash screen](assets/screenshots/splash.jpg)
